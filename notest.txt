@@ -1,0 +1,35 @@
+WHat is React
+  React is kind of library 
+
+  what are the benefits with the react?
+
+   Perfomrance 
+
+   security -- jsx code  javascript and XML
+   browser can understand javascript and html,css
+   babel(converts) - converts jsx to javascript and hmtl, css
+
+
+DOM - document object Modal
+RealDOM - if we are applying any operation in realDOM t is costly degrading the Perfomrance
+virtualDOM - is a copy of realDOM  object tree
+
+     html                                               html
+  head    body                       realDOM      head         body
+        div  div                                            div     div
+        praveen ANGUlar,REACT                               praveen   ANGUlar, REACT
+
+
+Server side rendering vs client side rendering 
+SEO - search engine optimization  html meta 
+
+
+limitations
+JSX 
+inline coding 
+
+functional component vs class component
+presntational componennt  vs pure component present past future 
+
+stateless component vs statefulComponent 
+
