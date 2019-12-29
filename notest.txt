@@ -33,3 +33,6 @@ presntational componennt  vs pure component present past future
 
 stateless component vs statefulComponent 
 
+
+synthetic events -- onclick 
+
