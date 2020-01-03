@@ -8,7 +8,8 @@ WHat is React
    security -- jsx code  javascript and XML
    browser can understand javascript and html,css
    babel(converts) - converts jsx to javascript and hmtl, css
-
+ 
+ xss - attack - phishing - cross site scripting 
 
 DOM - document object Modal
 RealDOM - if we are applying any operation in realDOM t is costly degrading the Perfomrance
@@ -17,7 +18,7 @@ virtualDOM - is a copy of realDOM  object tree
      html                                               html
   head    body                       realDOM      head         body
         div  div                                            div     div
-        praveen ANGUlar,REACT                               praveen   ANGUlar, REACT
+        praveen ANGUlar,REACT                           praveen   ANGUlar, REACT
 
 
 Server side rendering vs client side rendering 
@@ -35,4 +36,57 @@ stateless component vs statefulComponent
 
 
 synthetic events -- onclick 
+
+
+ternary condition
+
+if and else
+
+{data ? data1 : data2 }
+
+loaders 
+
+this.state = {loading: true}
+
+response form backend  this.setState({loading: false});
+
+
+render() {
+    retrun() {
+
+        {this.state.loading ? loaderImage: loading completed}
+    }
+}
+
+multiple statements
+
+    parent fb page
+
+    child components - profile, sideNav,posts,advt
+
+    changes profile image - profile change the image - profile parent - 
+    will make api call - get the response - update the state - api success
+    - chuld Component - will display the image 
+
+    setState - rerender parent - all child components should be called 
+
+    parent . 
+
+    this.state = {
+        profile: false,
+        sideNav: false,
+        posts: false,
+        adv: false
+    };
+
+    after profile change completed 
+   this.state = {
+        profile: true,
+        sideNav: false,
+        posts: false,
+        adv: false
+    };
+
+all childs shouldComponentUpdate 
+
 

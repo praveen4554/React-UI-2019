@@ -10,6 +10,7 @@ export default class Test extends React.Component {
        this.test = this.test.bind(this);
        this.child = this.child.bind(this);
    }
+
     test(event) {
         console.log('praveen');
         console.log(event);
