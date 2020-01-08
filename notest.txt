@@ -90,3 +90,49 @@ multiple statements
 all childs shouldComponentUpdate 
 
 
+page 
+
+callback - API calls - std,teacher,mentor -- sockets - will UnMount -- i am unsubscribe or releasing or 
+
+other component - i want add new student -- 
+
+
+facebook 
+
+posts - profile page
+
+posts - page - we are automatically get the updates - the page dont have the scope - we need to clear the memory unsubscribe 
+
+profile page - i need to show profile info only - i dont show any posts -
+
+checkOut -
+
+shipp , pay, bill, terms, cardDetails
+
+
+2- guestUser, authenticatedUser
+
+checkoutComponent - componentDidMount - session API Call - details 
+
+SPA - single paged Application 
+
+facebook -- Home, profile , logout , changes url 
+
+SPA - faster rendering, faster loading, easy to view 
+
+ANgularjs, Jquery - we use the library - cdns 
+
+react ANgular2+ -- node - everthing they have been created as 3rd party modues
+if we are using react-router-DOM
+
+if we are using fetch, axios API Calls 
+
+
+
+
+
+
+
+
+
+
