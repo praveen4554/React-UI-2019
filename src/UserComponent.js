@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import { Childeren } from './App';
+import { InputComponent } from './InuptComponent';
 export default class UserList extends React.Component {
+    constructor() {
+        super();
+        this.ChildRef = React.createRef();
+    }
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json())
         .then((data)=>{
@@ -18,8 +24,14 @@ export default class UserList extends React.Component {
         }).then(response => response.json())
         .then((data)=>{
             console.log(data);
-        });;
+        });
 
+        axios.get('https://jsonplaceholder.typicode.com/todos/1').then((response)=>{
+            console.log(response.data);
+        }).catch((err)=>{
+            console.log(err);
+        });
+        this.ChildRef.current.focus();
     }
     render() {
         const listOfUsers = ['praveen','praveen1','praveen2','praveen3'];
@@ -43,6 +55,7 @@ export default class UserList extends React.Component {
          <li>Backbone</li>
          </ul>
        </Childeren>
+       <InputComponent/>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 
-import React, {Component} from 'react';
+import React, { Component} from 'react';
 export default class UserRegistrationForm extends React.Component {
     constructor() {
         super();

@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react';
 import ChildComponent from './ChildComponent';
+import { InputComponent } from './InuptComponent';
 export default class Test extends React.Component {
    constructor() {
        super();
@@ -9,6 +10,8 @@ export default class Test extends React.Component {
             data: []};
        this.test = this.test.bind(this);
        this.child = this.child.bind(this);
+       this.disableInput = this.disableInput.bind(this);
+       this.InputRef = React.createRef();
    }
 
     test(event) {
@@ -25,6 +28,11 @@ export default class Test extends React.Component {
         this.setState({value: data});
         console.log('child calling');
     }
+    disableInput() {
+        console.log(this.InputRef);
+       this.InputRef.current.disabled = true;
+       this.InputRef.current.value = "praveen";
+    }
     render() {
         //const data = ['praveen1','praveen2','praveen3','praveen4','praveen5','praveen6','praveen7'];
         const displayMythri = false;
@@ -34,6 +42,8 @@ export default class Test extends React.Component {
         console.log(list);
         const element = <h1>String interpolation</h1>;
         return(<div> 
+        <InputComponent/>
+        <button onClick={this.disableInput}> Disable Input</button>
         <ChildComponent praveen= {this.state.value} childData={this.child}> </ChildComponent>
         <button onClick ={ (event)=> this.test(event)}> Parent Button </button>
         { this.state.loading ? <div><h4>Its React Tutorial</h4>

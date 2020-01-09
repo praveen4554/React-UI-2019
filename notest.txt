@@ -127,6 +127,28 @@ if we are using react-router-DOM
 
 if we are using fetch, axios API Calls 
 
+users --   /users
+createUser -- /users/createUser
+2XX - success
+200 -- get and put 
+201 -- create or post - it will create new record into the database 
+204 - get - no data found 
+
+4XX - bad data
+
+400 - bad request - if any inforamtion missing 
+401 - unauthorized - 
+
+403 - forbidden - you dont have acces 
+404 - not found - not exist 
+
+500 - internal server error  
+
+
+refs - references 
+document 
+
+refs - reference of the element it means we are getting directly DOM Reference 
 
 
 
