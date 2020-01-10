@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import Test from './ClassComponent';
 import './App.css';
 import UserList from './UserComponent';
+import User from './User';
+import HoverComponent from './HoverComponent';
+import ShareFunction from './ShareFunction';
+import Counter from './Counter';
+import StateInFunctionalComponent from './stateInFunctionalComponent';
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,6 +38,14 @@ function App() {
        <Route path="*" component={NotFoundComponent}/>
        </Switch>
        </Router>
+       <Counter render = {(counter,incrementCount) =>(
+         <User counter={counter} incrementCount= {incrementCount}/>
+  )}/>
+       <Counter render = {(counter,incrementCount) =>(
+         <HoverComponent counter={counter} incrementCount= {incrementCount}/>
+  )}/>
+       <ShareFunction render={(isAuthenticated)=> isAuthenticated? 'praveen': 'Guest'}/>
+       <StateInFunctionalComponent/>
     </div>
   );
 }

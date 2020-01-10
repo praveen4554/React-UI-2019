@@ -155,6 +155,8 @@ refs - reference of the element it means we are getting directly DOM Reference
 
 
 
+renderprops - shareing the same code and props logic in different components
+
 
 
 
