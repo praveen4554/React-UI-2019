@@ -157,6 +157,55 @@ refs - reference of the element it means we are getting directly DOM Reference
 
 renderprops - shareing the same code and props logic in different components
 
+storeing in one place and i want to use in multple components 
+redux - 
 
 
+redux 3 principals 
+
+1. single sourec of truth - we are storing store all the data in single place 
+2. State is read only - State read the state and we are displaying it.
+If you want to change the state, the state changes will be made by reducer 
+3. changes are made by pure functions - 
+
+redux
+Actions - component to tell the reducer i want to change the state 
+Reducer - it will decide whther i want to change the state or not 
+Store - wheere we can store the data
+View - it will views the data 
+
+component - store 
+
+listen for changes listnes to state i can use mapStateToprops
+if want to dispatch any action i can use mapDispatchTOProps
+
+connect - which will connects you from the component to state 
+
+cart - component  listend to add cart action mapStateToprpos return {allItems: state.addedItems}
+
+product - component add a mobile i am dispatching an action (type:'ADD Item', value:{mobile: iphonex} )
+accessories - dispatch an action ({type:'ADD Item', value:{aceesories:['headPhones']}})
+
+insurance - 
+
+middleware - we are an action or any state changes we can apply middleware where we can write logs
+
+
+action-middleware-reducer
+
+context-api - redux-saga
+
+redux-thunk - its middleware- async function - making an api calls 
+redux-thunk - by default it returns promise 
+
+promise - which will take only one request at atime and we cant cancel it. It should be resolve or reject
+
+
+
+redux-saga - create generators - when want to make multiple api calls and i want to create a new function
+
+context-api - 16.3 - parent - child1- child2- child11-child12 - child21-child22
+props - parent - child2-child21
+context api - parent - child21
+autenticated user - chagellanguage - theme 
 

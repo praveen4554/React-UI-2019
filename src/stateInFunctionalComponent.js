@@ -1,5 +1,8 @@
 import React, {useState, useEffect } from 'react';
-export default function StateInFunctionalComponent() {
+import { connect } from 'react-redux';
+import { fetchData } from './reducers/reducer';
+
+function StateInFunctionalComponent(props) {
     const [count, setCount] = useState(0)
     const [update, setUpdate] = useState(0)
     useEffect(()=>{
@@ -14,6 +17,27 @@ export default function StateInFunctionalComponent() {
        <button onClick={()=> setUpdate(update+1)}>
        setUpdate {update} times clicked
        </button>
+       <button onClick={props.fetchData()}>
+         fetchTodoData
+       </button>
+       <button onClick={props.user}> change User in Child Component</button>
       </div>
   )
 }
+
+
+const mapStateToProps = (state) =>{
+  console.log(state);
+  return {
+    userName: state.user
+  }
+}
+
+const mapDispatchTOProps = (dispatch) =>{
+  return {
+    user: () => dispatch({type:'Authenticated',val:'praveen1234'}),
+    fetchData: () => dispatch(fetchData())
+
+  }
+}
+export default connect(mapStateToProps,mapDispatchTOProps)(StateInFunctionalComponent);
